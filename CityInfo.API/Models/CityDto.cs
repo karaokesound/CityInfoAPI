@@ -1,9 +1,8 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace CityInfo.API.Models
+﻿namespace CityInfo.API.Models
 {
     public class CityDto
     {
+        // We do not use Data Annotations here, because CityDto is only to GET data, not to store it.
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string? Descirption { get; set; }

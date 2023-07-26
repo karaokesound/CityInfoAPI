@@ -7,6 +7,8 @@ namespace CityInfo.API.Controllers
     [ApiController]
     public class FilesController : ControllerBase
     {
+        private readonly FileExtensionContentTypeProvider _fileExtensionContentTypeProvider;
+
         public FilesController(FileExtensionContentTypeProvider fileExtensionContentTypeProvider)
         {
             _fileExtensionContentTypeProvider = fileExtensionContentTypeProvider ?? throw new System.ArgumentNullException(
@@ -29,7 +31,5 @@ namespace CityInfo.API.Controllers
 
             return File(bytes, contentType, Path.GetFileName(filePath));
         }
-
-        private readonly FileExtensionContentTypeProvider _fileExtensionContentTypeProvider;
     }
 }
