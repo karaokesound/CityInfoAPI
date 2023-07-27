@@ -15,7 +15,7 @@ namespace CityInfo.API.Stores
                 {
                     Id = 1,
                     Name = "New York City",
-                    Descirption = "The one with that big park.",
+                    Description = "The one with that big park.",
                     PointsOfInterest = new List<PointOfInterestDto>()
                     {
                         new PointOfInterestDto()
@@ -38,7 +38,7 @@ namespace CityInfo.API.Stores
                 {
                     Id = 2,
                     Name = "Antwerp",
-                    Descirption = "The one with the cathedral that was never really finished.",
+                    Description = "The one with the cathedral that was never really finished.",
                      PointsOfInterest = new List<PointOfInterestDto>()
                     {
                          new PointOfInterestDto()
@@ -61,7 +61,7 @@ namespace CityInfo.API.Stores
                 {
                     Id = 3,
                     Name = "Paris",
-                    Descirption = "The one with that big tower.",
+                    Description = "The one with that big tower.",
                      PointsOfInterest = new List<PointOfInterestDto>()
                     {
                         new PointOfInterestDto()

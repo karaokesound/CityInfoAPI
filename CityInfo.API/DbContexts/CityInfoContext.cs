@@ -1,5 +1,4 @@
 ﻿using CityInfo.API.Entities;
-using CityInfo.API.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CityInfo.API.DbContexts
@@ -24,19 +23,19 @@ namespace CityInfo.API.DbContexts
                 new City("New York City")
                 {
                     Id = 1,
-                    Descirption = "The most populous city in the United States."
+                    Description = "The most populous city in the United States."
                 },
 
                 new City("Antwerp")
                 {
                     Id = 2,
-                    Descirption = "The capital of Antwerp Province in the Flemish Region in Belgium"
+                    Description = "The capital of Antwerp Province in the Flemish Region in Belgium"
                 },
 
                 new City("Paris")
                 {
                     Id = 3,
-                    Descirption = "The capital and most populous city of France"
+                    Description = "The capital and most populous city of France"
                 });
 
             modelBuilder.Entity<PointOfInterest>()
